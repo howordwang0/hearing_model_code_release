@@ -1,0 +1,8 @@
+work/data/
+*.xpt
+*.sas7bdat
+*.sav
+*.xlsx
+__pycache__/
+.Rhistory
+.RData

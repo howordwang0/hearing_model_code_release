@@ -1,0 +1,135 @@
+{
+  "status": "Exploratory research models only; not validated for clinical deployment.",
+  "development_n": 11679,
+  "events": 3105,
+  "model_development": "Unweighted L1 logistic, GroupKFold penalty selection. Indicator terms added only for predictors missing in training.",
+  "models": {
+    "base": {
+      "input_features": [
+        "age",
+        "female",
+        "self_hearing_difficulty"
+      ],
+      "training_medians": {
+        "age": 58.0,
+        "female": 1.0,
+        "self_hearing_difficulty": 0.0
+      },
+      "training_missing_indicator_features": [],
+      "log_odds_intercept": -8.808627544862428,
+      "coefficients": [
+        {
+          "term": "age",
+          "coefficient_on_unscaled_imputed_input": 0.12467327476524244
+        },
+        {
+          "term": "female",
+          "coefficient_on_unscaled_imputed_input": -0.7040704891708441
+        },
+        {
+          "term": "self_hearing_difficulty",
+          "coefficient_on_unscaled_imputed_input": 1.6427009102130996
+        }
+      ],
+      "selected_C": 1.0,
+      "verification_max_absolute_probability_error": 2.7755575615628914e-16
+    },
+    "expanded": {
+      "input_features": [
+        "age",
+        "female",
+        "bmi",
+        "diabetes",
+        "ever_smoked",
+        "current_smoker",
+        "creatinine",
+        "hemoglobin",
+        "self_hearing_difficulty"
+      ],
+      "training_medians": {
+        "age": 58.0,
+        "female": 1.0,
+        "bmi": 23.844277271381767,
+        "diabetes": 0.0,
+        "ever_smoked": 0.0,
+        "current_smoker": 0.0,
+        "creatinine": 0.8,
+        "hemoglobin": 13.9,
+        "self_hearing_difficulty": 0.0
+      },
+      "training_missing_indicator_features": [
+        "bmi",
+        "diabetes",
+        "ever_smoked",
+        "current_smoker",
+        "creatinine",
+        "hemoglobin"
+      ],
+      "log_odds_intercept": -8.973406241123723,
+      "coefficients": [
+        {
+          "term": "age",
+          "coefficient_on_unscaled_imputed_input": 0.12274663369771344
+        },
+        {
+          "term": "female",
+          "coefficient_on_unscaled_imputed_input": -0.49196122425943906
+        },
+        {
+          "term": "bmi",
+          "coefficient_on_unscaled_imputed_input": -0.000444803115824759
+        },
+        {
+          "term": "diabetes",
+          "coefficient_on_unscaled_imputed_input": 0.0
+        },
+        {
+          "term": "ever_smoked",
+          "coefficient_on_unscaled_imputed_input": 0.18277354467962062
+        },
+        {
+          "term": "current_smoker",
+          "coefficient_on_unscaled_imputed_input": 0.16726042950480147
+        },
+        {
+          "term": "creatinine",
+          "coefficient_on_unscaled_imputed_input": 0.09160311695858067
+        },
+        {
+          "term": "hemoglobin",
+          "coefficient_on_unscaled_imputed_input": -0.0008777977887650197
+        },
+        {
+          "term": "self_hearing_difficulty",
+          "coefficient_on_unscaled_imputed_input": 1.6237232315770065
+        },
+        {
+          "term": "missing__bmi",
+          "coefficient_on_unscaled_imputed_input": 0.0
+        },
+        {
+          "term": "missing__diabetes",
+          "coefficient_on_unscaled_imputed_input": 0.0
+        },
+        {
+          "term": "missing__ever_smoked",
+          "coefficient_on_unscaled_imputed_input": 0.7842696844252722
+        },
+        {
+          "term": "missing__current_smoker",
+          "coefficient_on_unscaled_imputed_input": 0.0006582063773529744
+        },
+        {
+          "term": "missing__creatinine",
+          "coefficient_on_unscaled_imputed_input": 0.16621520164830822
+        },
+        {
+          "term": "missing__hemoglobin",
+          "coefficient_on_unscaled_imputed_input": 0.0
+        }
+      ],
+      "selected_C": 0.1,
+      "verification_max_absolute_probability_error": 6.661338147750939e-16
+    }
+  }
+}

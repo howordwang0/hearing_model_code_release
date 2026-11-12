@@ -1,0 +1,145 @@
+cohort,metric,point,low,high,valid_replicates,status
+Korea_2019,auc_base,0.8665797579014716,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,auc_expanded,0.8717687670817909,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,auc_difference,0.005189009180319282,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,routine_auc,0.8338056631575292,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,base_calibration_intercept,-0.16792784279166584,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,expanded_calibration_intercept,-0.16458538873707476,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,calibration_intercept_difference,0.0033424540545910764,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,base_calibration_slope,1.2835511959788024,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,expanded_calibration_slope,1.3345889210254642,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,calibration_slope_difference,0.05103772504666182,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,routine_calibration_intercept,-0.23952351786550044,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,routine_calibration_slope,1.3266489120986764,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,model_sensitivity,0.5929827195376125,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,model_referral,0.18021178307649727,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,self_sensitivity,0.35740508621299155,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,self_referral,0.10557518502602467,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,sensitivity_difference_model_minus_self,0.23557763332462095,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2019,referral_difference_model_minus_self,0.0746365980504726,,,0,not estimated: singleton component strata; method requires expert review
+Korea_2020,auc_base,0.8327951961069036,0.8046335344513048,0.8602455346594982,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,auc_expanded,0.8352083044546019,0.807297119161309,0.8620980708421052,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,auc_difference,0.0024131083476983672,-0.00041332840494221753,0.0054016261416760854,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,routine_auc,0.7889802282003557,0.7602217265483635,0.8193471954183563,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,base_calibration_intercept,-0.11025508569196413,-0.254908984218344,0.030041592199302934,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,expanded_calibration_intercept,-0.09877630771671808,-0.2453710159035693,0.03899111695643687,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,calibration_intercept_difference,0.011478777975246046,0.004766754666501851,0.01795965578026472,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,base_calibration_slope,1.0935484430364941,0.9568416007270493,1.2626596872160851,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,expanded_calibration_slope,1.12353683943013,0.9842003257385196,1.298782210962802,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,calibration_slope_difference,0.02998839639363582,0.013298033911366053,0.048392227715155306,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,routine_calibration_intercept,-0.14244682122794308,-0.2865860113171842,-0.0013517777766511008,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,routine_calibration_slope,1.0816586102531245,0.9335859041960693,1.2534365003861563,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,model_sensitivity,0.5318781269605883,0.4810228339033664,0.5884745567971551,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,model_referral,0.19693630806192572,0.17976343616503865,0.21447497205631166,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,self_sensitivity,0.3719559531203658,0.31295709472569416,0.42963944104649193,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,self_referral,0.12304735699854344,0.10781411482366682,0.13969086172163478,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,sensitivity_difference_model_minus_self,0.15992217384022256,0.08828289469297892,0.23356962231137965,500,exploratory fixed-model PSU resampling; design review required
+Korea_2020,referral_difference_model_minus_self,0.07388895106338228,0.049713897911532565,0.09682437767584821,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,auc_base,0.8483802982681692,0.8255183033636098,0.8708605494401357,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,auc_expanded,0.8477220737826847,0.8245408994449498,0.8711254039440368,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,auc_difference,-0.000658224485484471,-0.0036424211647287704,0.002149783983400877,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,routine_auc,0.8041249314548893,0.7808345876104724,0.8255136613453029,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,base_calibration_intercept,-0.1351870435037845,-0.29175370803975953,0.018688589786103747,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,expanded_calibration_intercept,-0.12405053637655555,-0.27451506537320564,0.02961664541533529,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,calibration_intercept_difference,0.01113650712722894,0.0031814999387829324,0.01762277964146335,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,base_calibration_slope,1.218672984012373,1.0912135776064162,1.354449937609811,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,expanded_calibration_slope,1.2313305547188695,1.101135084969867,1.3745449206639748,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,calibration_slope_difference,0.012657570706496646,-0.0055682175606344584,0.03323776519902911,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,routine_calibration_intercept,-0.1800543720110636,-0.3353897366597689,-0.028723478813540086,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,routine_calibration_slope,1.1486319405453627,1.0238586188882344,1.2890384247193225,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,model_sensitivity,0.5540819056671377,0.4972420861192927,0.6071632825045991,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,model_referral,0.21629628580318833,0.19857854241529016,0.23504378129328574,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,self_sensitivity,0.39839214895218444,0.33865082979222494,0.4571555325801761,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,self_referral,0.11886380842424187,0.10525834183705501,0.13323144387707256,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,sensitivity_difference_model_minus_self,0.15568975671495322,0.071245722420088,0.23663080801504466,500,exploratory fixed-model PSU resampling; design review required
+Korea_2021,referral_difference_model_minus_self,0.09743247737894646,0.07758347481777725,0.11729683801202574,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,auc_base,0.8518686359950557,0.8296316223059411,0.8765712063785199,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,auc_expanded,0.8542596775913217,0.8309286732993529,0.877993731419839,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,auc_difference,0.002391041596266019,-0.0003285589304435427,0.004957483980366579,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,routine_auc,0.813638319838698,0.7862100589130049,0.8409072597377568,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,base_calibration_intercept,-0.1973995720757062,-0.351686012013402,-0.06575963526430925,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,expanded_calibration_intercept,-0.19120201375360735,-0.34129454480823707,-0.061967188122920465,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,calibration_intercept_difference,0.0061975583220988395,-0.0019496026695504825,0.01385306511936446,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,base_calibration_slope,1.170540661560299,1.0462352996291207,1.3180080832664425,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,expanded_calibration_slope,1.2036600400698307,1.0809940952687278,1.35551532105489,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,calibration_slope_difference,0.03311937850953184,0.015546311804134827,0.05188618143925332,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,routine_calibration_intercept,-0.2422308364432269,-0.3928682546385397,-0.11511833384460644,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,routine_calibration_slope,1.2269206607846415,1.0895122861972635,1.4053189892428821,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,model_sensitivity,0.5728193814985071,0.5039486478490832,0.6363286247176053,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,model_referral,0.2223569424469529,0.19946086760372916,0.24619849956020792,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,self_sensitivity,0.38482562610315185,0.329380803508281,0.4454462929141491,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,self_referral,0.11492872054724336,0.09929424061776083,0.1293622343193164,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,sensitivity_difference_model_minus_self,0.18799375539535523,0.09541958176481181,0.28543506057332807,500,exploratory fixed-model PSU resampling; design review required
+Korea_2022,referral_difference_model_minus_self,0.10742822189970953,0.08195356268909548,0.13475769355526027,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,auc_base,0.8241076567625889,0.7847953280974775,0.8642376030190261,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,auc_expanded,0.8251666371258422,0.7901730118659278,0.8653009258017645,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,auc_difference,0.001058980363253248,-0.006008339035743463,0.010581935308850396,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,routine_auc,0.7676104287937802,0.72808832807341,0.8185971817413523,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,base_calibration_intercept,-0.2500251794027144,-0.6372609333501132,0.035344147778674964,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,expanded_calibration_intercept,-0.26922742858071924,-0.6503664111632362,0.014470790022850837,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,calibration_intercept_difference,-0.019202249178004838,-0.032377584992927595,-0.004964371803898385,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,base_calibration_slope,0.9555678462737534,0.8022072359219198,1.1252774985689151,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,expanded_calibration_slope,0.9888532566288012,0.8430181725380377,1.1588429444373143,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,calibration_slope_difference,0.03328541035504784,-0.0010578358830862352,0.07592529179245174,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,routine_calibration_intercept,0.13080941143842467,-0.23986867249370933,0.4071662062490395,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,routine_calibration_slope,0.9657780389833968,0.7897350166343999,1.2365978110335292,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,model_sensitivity,0.40328524215703365,0.30234486456749626,0.5571610600729121,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,model_referral,0.15135616666241003,0.12114998041016348,0.18131752126326542,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,self_sensitivity,0.6573042840870496,0.5789296878153319,0.7303531032686738,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,self_referral,0.3080734519013763,0.27562660207164336,0.3421140692019576,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,sensitivity_difference_model_minus_self,-0.2540190419300159,-0.3706650351837582,-0.0829945374768308,500,exploratory fixed-model PSU resampling; design review required
+US_2001_2002,referral_difference_model_minus_self,-0.15671728523896628,-0.2005063789426704,-0.1108932335737247,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,auc_base,0.8033957301781968,0.7456628626498467,0.8700051696477256,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,auc_expanded,0.8082549530590322,0.751409575124616,0.8743782932944152,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,auc_difference,0.004859222880835401,-0.004562326649497858,0.013542586965993038,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,routine_auc,0.6916486730666884,0.6258119365651841,0.767990833871458,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,base_calibration_intercept,-0.4147824272610155,-0.686054807698608,-0.18948225192753515,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,expanded_calibration_intercept,-0.43240954245174823,-0.7026338331564217,-0.21099938356053172,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,calibration_intercept_difference,-0.017627115190732734,-0.03201246568571067,-0.0009775676951687931,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,base_calibration_slope,0.8720161361883818,0.6836117225794879,1.157516814462226,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,expanded_calibration_slope,0.9125203562868532,0.7177549643203014,1.210465520149843,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,calibration_slope_difference,0.04050422009847143,0.0006124492717854844,0.07457412637420203,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,routine_calibration_intercept,-0.04350368836711663,-0.33567814190247747,0.1876691033169791,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,routine_calibration_slope,0.6524867779246114,0.446230108901103,0.9273187804040759,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,model_sensitivity,0.4006594055626525,0.320330698647976,0.49370646603067514,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,model_referral,0.16680030527460313,0.1471078570993496,0.18532967185760926,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,self_sensitivity,0.7602186471996973,0.6564176378970252,0.8476508592302621,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,self_referral,0.30924427391983256,0.2686320685194425,0.3431323682456905,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,sensitivity_difference_model_minus_self,-0.35955924163704484,-0.4619782011025259,-0.2570928949255376,500,exploratory fixed-model PSU resampling; design review required
+US_2003_2004,referral_difference_model_minus_self,-0.14244396864522943,-0.18510039439782364,-0.09439463363304555,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,auc_base,0.8367758461380914,0.800960992842695,0.869885854966,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,auc_expanded,0.8382360509327446,0.8003055789708533,0.8750344452751234,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,auc_difference,0.0014602047946531416,-0.0037322985621908804,0.0068652246249150855,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,routine_auc,0.7320572118199551,0.6801675392835301,0.7850638435657712,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,base_calibration_intercept,-0.5810010523764678,-0.8390934098816658,-0.3858770520880793,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,expanded_calibration_intercept,-0.5879428136762799,-0.8481221172201554,-0.3897147514394236,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,calibration_intercept_difference,-0.006941761299812055,-0.018862622583875225,0.005578016925130227,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,base_calibration_slope,1.0571888155413136,0.8898328539279156,1.2702475751086997,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,expanded_calibration_slope,1.079752236144255,0.9105510522185714,1.2973446321146942,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,calibration_slope_difference,0.022563420602941475,-0.0041812614799041515,0.05087796036451274,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,routine_calibration_intercept,-0.2604185095391733,-0.537650635036001,-0.04951641051840932,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,routine_calibration_slope,0.8053066054211356,0.5973276178480084,1.0488229634898671,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,model_sensitivity,0.4210490191247675,0.3442357024518516,0.49566743462932605,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,model_referral,0.19215349725093248,0.17195207434286583,0.2114743479871932,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,self_sensitivity,0.7473853304347904,0.6849848453447918,0.8118242665642336,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,self_referral,0.26768154472247135,0.2426266404983391,0.2908605494596696,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,sensitivity_difference_model_minus_self,-0.3263363113100229,-0.4397680076087751,-0.20662004281158378,500,exploratory fixed-model PSU resampling; design review required
+US_2011_2012,referral_difference_model_minus_self,-0.07552804747153888,-0.1027630950494376,-0.04584438548492555,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,auc_base,0.8399997556771667,0.8159905226280094,0.8659247814438731,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,auc_expanded,0.8411590088712372,0.8185896551140897,0.8658784795789601,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,auc_difference,0.0011592531940705086,-0.003983867602360633,0.006713184258704374,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,routine_auc,0.7563381333427416,0.7292129936734435,0.7875454592285256,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,base_calibration_intercept,-0.7237114509040269,-0.9263627374830824,-0.5261677900335098,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,expanded_calibration_intercept,-0.7136689100200204,-0.9170441528619884,-0.5096951912448681,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,calibration_intercept_difference,0.010042540884006468,-0.002853488894197936,0.02322101119027275,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,base_calibration_slope,0.9968640537262765,0.8835865505332556,1.1341839675821357,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,expanded_calibration_slope,1.0179255064756918,0.9179694723983135,1.1426220092209096,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,calibration_slope_difference,0.021061452749415288,-0.009931861723616563,0.05249107786117646,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,routine_calibration_intercept,-0.3622554593643199,-0.5894833811009035,-0.16457567486477526,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,routine_calibration_slope,0.8883123333221706,0.7688491777620325,1.0243331776875333,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,model_sensitivity,0.5167730470080023,0.4511428302428668,0.588286723239155,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,model_referral,0.23329971227548327,0.2162491631053648,0.2487303387222959,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,self_sensitivity,0.7238177288502428,0.6391674522782383,0.7988025314827811,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,self_referral,0.26786477387704805,0.23719292727141716,0.29648069132655536,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,sensitivity_difference_model_minus_self,-0.20704468184224045,-0.3115281794232111,-0.09582409612071975,500,exploratory fixed-model PSU resampling; design review required
+US_2015_2016,referral_difference_model_minus_self,-0.03456506160156478,-0.05495992409714372,-0.013798696612725172,500,exploratory fixed-model PSU resampling; design review required

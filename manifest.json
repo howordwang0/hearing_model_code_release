@@ -1,0 +1,180 @@
+{
+  "contents": [
+    {
+      "path": "README.md",
+      "bytes": 4272,
+      "sha256": "66b4f5e1b89503add9ea3e70d8299fb7714c634cd9acdf3786b29b202245bd4b"
+    },
+    {
+      "path": "work/cross_country_hearing_pilot.py",
+      "bytes": 11305,
+      "sha256": "46aa5d304860be13068ca87575cb71d0122a17153c12e96d93080a34a547779f"
+    },
+    {
+      "path": "work/nhanes_corrected_pilot.py",
+      "bytes": 9693,
+      "sha256": "26dd11d426761af867d454c7c7004583380fdc616c40cdd07117939461d5cb42"
+    },
+    {
+      "path": "work/validate_nhanes_2003_2004.py",
+      "bytes": 6832,
+      "sha256": "bc25a163cbef8e278dede04042e0d4304119327d15ee46c666154587158252dc"
+    },
+    {
+      "path": "work/incremental_self_report_models.py",
+      "bytes": 4745,
+      "sha256": "9b3ff267fa22f24de2738a6a871a66227c3c4e0b13eb53639b3fb68c27fa7efa"
+    },
+    {
+      "path": "work/survey_paired_auc.py",
+      "bytes": 3187,
+      "sha256": "1c2cd8e71d95b4a013b4d7090f6abd8f7a0ffb2b9812752baf19a6e8610cda95"
+    },
+    {
+      "path": "work/review_paired_rao_wu.py",
+      "bytes": 7671,
+      "sha256": "bec3c4645e90eba0a335280cd9eac4bdf24977e0e563773c12b02221368f8215"
+    },
+    {
+      "path": "work/korea2019_independent_survey.py",
+      "bytes": 4285,
+      "sha256": "23a7bb513dbad09d54bab8ed51e8036afe3df1d331cff326d43b9106ab7ee6b3"
+    },
+    {
+      "path": "work/korea2019_independent_survey.R",
+      "bytes": 3733,
+      "sha256": "b607bea761c7caf3b6e70b0b514322c51d7bab9199d6608717866b9e0043eb28"
+    },
+    {
+      "path": "work/korea2019_lonely_sensitivity.R",
+      "bytes": 1087,
+      "sha256": "ea1d8e4bde3826c502bf986bb7383a3352dc6fc9e0713b82b9ca6427d82886aa"
+    },
+    {
+      "path": "work/korean_design_and_999_sensitivity.py",
+      "bytes": 7330,
+      "sha256": "46e27f6d30be02b8d65ef631fb029b497c7043972bbd6e84e227b4e35b9c4136"
+    },
+    {
+      "path": "work/review_intercept_recalibration.py",
+      "bytes": 2677,
+      "sha256": "ee223054df1d9db174d1e625b8cd347c606b300207ea2c4bbba97c6abba03ca1"
+    },
+    {
+      "path": "work/incremental_same_cycle_recalibration.py",
+      "bytes": 6081,
+      "sha256": "43f282e9fc0ded6d116f4cb3c25904f4af8527afdbe84d6fef024dec1241c150"
+    },
+    {
+      "path": "work/cross_country_calibration_and_matching.py",
+      "bytes": 6776,
+      "sha256": "54eaf73771fe88d7c3c0a36c3577d159c06de2b3d39dfb38a4b093d63f512c06"
+    },
+    {
+      "path": "work/export_incremental_model_card.py",
+      "bytes": 3059,
+      "sha256": "fd422ef4055e943260f62c19372fe7194792029992c30d28a826a48dff8513ec"
+    },
+    {
+      "path": "work/cross_country_cohort_baseline.py",
+      "bytes": 4422,
+      "sha256": "518c780584cb8efa937c3410f9fdc6e76177a0a87faf3e20b3e847b5a6d9dbae"
+    },
+    {
+      "path": "work/rebuild_primary_review_outputs.py",
+      "bytes": 6726,
+      "sha256": "a55629ab751c0f03b484916f7ffea3127872cc015f6a399dcd5e5dfb6566d068"
+    },
+    {
+      "path": "work/verify_survey_auc.R",
+      "bytes": 777,
+      "sha256": "21d89a58f4cead1a38534083560e9e0187ee5fd33f21df5b5e6d66f0796c80a6"
+    },
+    {
+      "path": "work/render_primary_review_materials.py",
+      "bytes": 6598,
+      "sha256": "ef5131425c68934ec973d07b85019c36c430351fde71e33f937158edd5abd71c"
+    },
+    {
+      "path": "work/prepare_revised_incremental_outputs.py",
+      "bytes": 5152,
+      "sha256": "5f65b86ff869cfd730caf4a60cc9187ba1eab61a1a7b34c1a6fe6d9c6aa288dc"
+    },
+    {
+      "path": "work/incremental_complete_case_sensitivity.py",
+      "bytes": 3883,
+      "sha256": "8c3c143fbc7689b294f48e8ece9ff9f782bfb109bb4eecbba2c57e521095abae"
+    },
+    {
+      "path": "work/incremental_exploratory_dca.py",
+      "bytes": 4740,
+      "sha256": "0f8c31ff26aad522a69cc7fec41ca182109ea62e2f7abaeea896ecd23df9817b"
+    },
+    {
+      "path": "work/age_support_sensitivity.py",
+      "bytes": 3937,
+      "sha256": "986ff72fba56119658e7647c4ce059c47106f283ce73b5da085c3b20d1009f23"
+    },
+    {
+      "path": "work/hearing_outcome_threshold_sensitivity.py",
+      "bytes": 3851,
+      "sha256": "5ea36bc090e0aa65428848412d1ee8c11dfef2d45080f6674888e757f1b772fd"
+    },
+    {
+      "path": "work/test_incremental_apparent_recalibration.py",
+      "bytes": 1605,
+      "sha256": "fbad03e8c04f22afd71852b1513527e543c1773f66d6b3f1fc57302439531947"
+    },
+    {
+      "path": "work/test_korea2019_independent_survey.py",
+      "bytes": 1906,
+      "sha256": "7c969495255f6bb44b45f2f97051fe40147dcb3f133d2ecdb8fc40cc2402006b"
+    },
+    {
+      "path": "work/test_korean_sensitivity_outputs.py",
+      "bytes": 2230,
+      "sha256": "07a62cad99f6adb46b7fab0ba8913255220e52142dc011b7f3f7bf6f862a5cf0"
+    },
+    {
+      "path": "work/test_survey_paired_auc.py",
+      "bytes": 1060,
+      "sha256": "c155fb84e60d53d397369f143db1f72eae01798ba24b98b127ae4e0b55908714"
+    },
+    {
+      "path": "outputs/增量模型_系数与插补规则_研究用.json",
+      "bytes": 4037,
+      "sha256": "a6da254429171e0a770a147b360d419023be5b18c49f0d6c31deb76598ed5e63"
+    },
+    {
+      "path": "outputs/复核后_配对抽样_探索性结果.csv",
+      "bytes": 22925,
+      "sha256": "a8c78dbd6a9bba11842c6d2953aa0576d0f562dde2c804827ecd9e2db1b82330"
+    },
+    {
+      "path": "outputs/korea_2019_R独立计算_探索性.csv",
+      "bytes": 9887,
+      "sha256": "1a3f853e48bbfa4698e6931761d6a947c0eec9c843e6b93c876a21d57c0133e1"
+    },
+    {
+      "path": "outputs/korea_2019_singleton_assumptions_sensitivity.csv",
+      "bytes": 669,
+      "sha256": "229813a7a2d05ad36f1f8fa4191f6e16be7c37aa1351ef99b08ee230b64936ac"
+    },
+    {
+      "path": "outputs/incremental_self_report_exploratory.csv",
+      "bytes": 1319,
+      "sha256": "39d06e5b14a4351015db31b7dc4223a7e2c21188a418229bd18a41ce5a615719"
+    },
+    {
+      "path": "outputs/incremental_paired_auc_exploratory_linearization.csv",
+      "bytes": 1840,
+      "sha256": "2d3b3803d42ab4a24f000eec278a82b8c37cf0cd98d0012a053f56d1abba460c"
+    },
+    {
+      "path": "outputs/cross_country_hearing_exploratory_report.json",
+      "bytes": 32926,
+      "sha256": "5b55c8063e1539286fcf34e6560128fe2a067598bc1d24c11bb4409669ad9c5d"
+    }
+  ],
+  "includes_individual_data": false
+}
