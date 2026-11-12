@@ -11,4 +11,7 @@ authors:
   - family-names: Cui
     given-names: Chunlian
 repository-code: "https://github.com/howordwang0/hearing_model_code_release"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24149658"
 license: "CC-BY-4.0"

@@ -10,8 +10,7 @@ The included scripts were run in the local environment documented in `README.md`
 
 ## Status
 
-Public repository: https://github.com/howordwang0/hearing_model_code_release (version tag v0.1.0).
-Archived copy and persistent DOI: https://doi.org/10.5281/zenodo.24149659 (Zenodo record 24149659, version 0.1.0, licence CC BY 4.0).
+Public repository: https://github.com/howordwang0/hearing_model_code_release (version tag v0.1.0). Persistent concept DOI: https://doi.org/10.5281/zenodo.24149658. The archived release record supplied by the authors is Zenodo record 24149967 (v0.1.1).
 
 ## License
 
