@@ -10,7 +10,8 @@ The included scripts were run in the local environment documented in `README.md`
 
 ## Status
 
-This is a pre-publication release candidate. The public repository URL, version tag, and persistent DOI will be added after the hosting account is selected and the final author review is complete.
+Public repository: https://github.com/howordwang0/hearing_model_code_release (version tag v0.1.0).
+Archived copy and persistent DOI: https://doi.org/10.5281/zenodo.24149659 (Zenodo record 24149659, version 0.1.0, licence CC BY 4.0).
 
 ## License
 
