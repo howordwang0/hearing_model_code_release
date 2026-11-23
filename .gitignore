@@ -1,4 +1,10 @@
 work/data/
+work/pydeps/
+.venv/
+outputs/*.csv
+outputs/*.json
+outputs/*.png
+outputs/*.md
 *.xpt
 *.sas7bdat
 *.sav

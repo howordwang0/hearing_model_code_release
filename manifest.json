@@ -1,157 +1,48 @@
 {
+  "release_version": "0.1.2",
   "contents": [
     {
+      "path": ".gitignore",
+      "bytes": 147,
+      "sha256": "ad879e7e06d4aa053bba50f52d97a95420d4c6636b369c06001bf4a2d203c9ad"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 516,
+      "sha256": "97706c89f2a437f3143a938092dd2cc6ae56efda554ee2e6d2722e7b80f1fb05"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 17550,
+      "sha256": "dd98b14dcc0f6b97e9243485959f997bfdc1e6a7ec541d2a3f144c47cd384e2e"
+    },
+    {
       "path": "README.md",
-      "bytes": 4272,
-      "sha256": "66b4f5e1b89503add9ea3e70d8299fb7714c634cd9acdf3786b29b202245bd4b"
+      "bytes": 4645,
+      "sha256": "001f069d56a3496cf0f98ed61c7cf05386bbb0a23b7271d1cb42530c1760447b"
     },
     {
-      "path": "work/cross_country_hearing_pilot.py",
-      "bytes": 11305,
-      "sha256": "46aa5d304860be13068ca87575cb71d0122a17153c12e96d93080a34a547779f"
+      "path": "README_public_release.md",
+      "bytes": 1583,
+      "sha256": "22827517115f50de0eb8e31e0d9bcabfed336d0961cb299acf5ab905179b356d"
     },
     {
-      "path": "work/nhanes_corrected_pilot.py",
-      "bytes": 9693,
-      "sha256": "26dd11d426761af867d454c7c7004583380fdc616c40cdd07117939461d5cb42"
+      "path": "outputs/cross_country_hearing_exploratory_report.json",
+      "bytes": 32926,
+      "sha256": "5b55c8063e1539286fcf34e6560128fe2a067598bc1d24c11bb4409669ad9c5d"
     },
     {
-      "path": "work/validate_nhanes_2003_2004.py",
-      "bytes": 6832,
-      "sha256": "bc25a163cbef8e278dede04042e0d4304119327d15ee46c666154587158252dc"
+      "path": "outputs/incremental_paired_auc_exploratory_linearization.csv",
+      "bytes": 1840,
+      "sha256": "2d3b3803d42ab4a24f000eec278a82b8c37cf0cd98d0012a053f56d1abba460c"
     },
     {
-      "path": "work/incremental_self_report_models.py",
-      "bytes": 4745,
-      "sha256": "9b3ff267fa22f24de2738a6a871a66227c3c4e0b13eb53639b3fb68c27fa7efa"
+      "path": "outputs/incremental_self_report_exploratory.csv",
+      "bytes": 1319,
+      "sha256": "39d06e5b14a4351015db31b7dc4223a7e2c21188a418229bd18a41ce5a615719"
     },
     {
-      "path": "work/survey_paired_auc.py",
-      "bytes": 3187,
-      "sha256": "1c2cd8e71d95b4a013b4d7090f6abd8f7a0ffb2b9812752baf19a6e8610cda95"
-    },
-    {
-      "path": "work/review_paired_rao_wu.py",
-      "bytes": 7671,
-      "sha256": "bec3c4645e90eba0a335280cd9eac4bdf24977e0e563773c12b02221368f8215"
-    },
-    {
-      "path": "work/korea2019_independent_survey.py",
-      "bytes": 4285,
-      "sha256": "23a7bb513dbad09d54bab8ed51e8036afe3df1d331cff326d43b9106ab7ee6b3"
-    },
-    {
-      "path": "work/korea2019_independent_survey.R",
-      "bytes": 3733,
-      "sha256": "b607bea761c7caf3b6e70b0b514322c51d7bab9199d6608717866b9e0043eb28"
-    },
-    {
-      "path": "work/korea2019_lonely_sensitivity.R",
-      "bytes": 1087,
-      "sha256": "ea1d8e4bde3826c502bf986bb7383a3352dc6fc9e0713b82b9ca6427d82886aa"
-    },
-    {
-      "path": "work/korean_design_and_999_sensitivity.py",
-      "bytes": 7330,
-      "sha256": "46e27f6d30be02b8d65ef631fb029b497c7043972bbd6e84e227b4e35b9c4136"
-    },
-    {
-      "path": "work/review_intercept_recalibration.py",
-      "bytes": 2677,
-      "sha256": "ee223054df1d9db174d1e625b8cd347c606b300207ea2c4bbba97c6abba03ca1"
-    },
-    {
-      "path": "work/incremental_same_cycle_recalibration.py",
-      "bytes": 6081,
-      "sha256": "43f282e9fc0ded6d116f4cb3c25904f4af8527afdbe84d6fef024dec1241c150"
-    },
-    {
-      "path": "work/cross_country_calibration_and_matching.py",
-      "bytes": 6776,
-      "sha256": "54eaf73771fe88d7c3c0a36c3577d159c06de2b3d39dfb38a4b093d63f512c06"
-    },
-    {
-      "path": "work/export_incremental_model_card.py",
-      "bytes": 3059,
-      "sha256": "fd422ef4055e943260f62c19372fe7194792029992c30d28a826a48dff8513ec"
-    },
-    {
-      "path": "work/cross_country_cohort_baseline.py",
-      "bytes": 4422,
-      "sha256": "518c780584cb8efa937c3410f9fdc6e76177a0a87faf3e20b3e847b5a6d9dbae"
-    },
-    {
-      "path": "work/rebuild_primary_review_outputs.py",
-      "bytes": 6726,
-      "sha256": "a55629ab751c0f03b484916f7ffea3127872cc015f6a399dcd5e5dfb6566d068"
-    },
-    {
-      "path": "work/verify_survey_auc.R",
-      "bytes": 777,
-      "sha256": "21d89a58f4cead1a38534083560e9e0187ee5fd33f21df5b5e6d66f0796c80a6"
-    },
-    {
-      "path": "work/render_primary_review_materials.py",
-      "bytes": 6598,
-      "sha256": "ef5131425c68934ec973d07b85019c36c430351fde71e33f937158edd5abd71c"
-    },
-    {
-      "path": "work/prepare_revised_incremental_outputs.py",
-      "bytes": 5152,
-      "sha256": "5f65b86ff869cfd730caf4a60cc9187ba1eab61a1a7b34c1a6fe6d9c6aa288dc"
-    },
-    {
-      "path": "work/incremental_complete_case_sensitivity.py",
-      "bytes": 3883,
-      "sha256": "8c3c143fbc7689b294f48e8ece9ff9f782bfb109bb4eecbba2c57e521095abae"
-    },
-    {
-      "path": "work/incremental_exploratory_dca.py",
-      "bytes": 4740,
-      "sha256": "0f8c31ff26aad522a69cc7fec41ca182109ea62e2f7abaeea896ecd23df9817b"
-    },
-    {
-      "path": "work/age_support_sensitivity.py",
-      "bytes": 3937,
-      "sha256": "986ff72fba56119658e7647c4ce059c47106f283ce73b5da085c3b20d1009f23"
-    },
-    {
-      "path": "work/hearing_outcome_threshold_sensitivity.py",
-      "bytes": 3851,
-      "sha256": "5ea36bc090e0aa65428848412d1ee8c11dfef2d45080f6674888e757f1b772fd"
-    },
-    {
-      "path": "work/test_incremental_apparent_recalibration.py",
-      "bytes": 1605,
-      "sha256": "fbad03e8c04f22afd71852b1513527e543c1773f66d6b3f1fc57302439531947"
-    },
-    {
-      "path": "work/test_korea2019_independent_survey.py",
-      "bytes": 1906,
-      "sha256": "7c969495255f6bb44b45f2f97051fe40147dcb3f133d2ecdb8fc40cc2402006b"
-    },
-    {
-      "path": "work/test_korean_sensitivity_outputs.py",
-      "bytes": 2230,
-      "sha256": "07a62cad99f6adb46b7fab0ba8913255220e52142dc011b7f3f7bf6f862a5cf0"
-    },
-    {
-      "path": "work/test_survey_paired_auc.py",
-      "bytes": 1060,
-      "sha256": "c155fb84e60d53d397369f143db1f72eae01798ba24b98b127ae4e0b55908714"
-    },
-    {
-      "path": "outputs/增量模型_系数与插补规则_研究用.json",
-      "bytes": 4037,
-      "sha256": "a6da254429171e0a770a147b360d419023be5b18c49f0d6c31deb76598ed5e63"
-    },
-    {
-      "path": "outputs/复核后_配对抽样_探索性结果.csv",
-      "bytes": 22925,
-      "sha256": "a8c78dbd6a9bba11842c6d2953aa0576d0f562dde2c804827ecd9e2db1b82330"
-    },
-    {
-      "path": "outputs/korea_2019_R独立计算_探索性.csv",
+      "path": "outputs/korea_2019_RчЛмчлЛшобчоЧ_цОвч┤вцАз.csv",
       "bytes": 9887,
       "sha256": "1a3f853e48bbfa4698e6931761d6a947c0eec9c843e6b93c876a21d57c0133e1"
     },
@@ -161,19 +52,174 @@
       "sha256": "229813a7a2d05ad36f1f8fa4191f6e16be7c37aa1351ef99b08ee230b64936ac"
     },
     {
-      "path": "outputs/incremental_self_report_exploratory.csv",
-      "bytes": 1319,
-      "sha256": "39d06e5b14a4351015db31b7dc4223a7e2c21188a418229bd18a41ce5a615719"
+      "path": "outputs/хвЮщЗПцибхЮЛ_ч│╗цХ░ф╕ОцПТшбешзДхИЩ_чаФчй╢чФи.json",
+      "bytes": 4037,
+      "sha256": "a6da254429171e0a770a147b360d419023be5b18c49f0d6c31deb76598ed5e63"
     },
     {
-      "path": "outputs/incremental_paired_auc_exploratory_linearization.csv",
-      "bytes": 1840,
-      "sha256": "2d3b3803d42ab4a24f000eec278a82b8c37cf0cd98d0012a053f56d1abba460c"
+      "path": "outputs/хдНца╕хРО_щЕНхп╣цК╜ца╖_цОвч┤вцАзч╗УцЮЬ.csv",
+      "bytes": 22925,
+      "sha256": "a8c78dbd6a9bba11842c6d2953aa0576d0f562dde2c804827ecd9e2db1b82330"
     },
     {
-      "path": "outputs/cross_country_hearing_exploratory_report.json",
-      "bytes": 32926,
-      "sha256": "5b55c8063e1539286fcf34e6560128fe2a067598bc1d24c11bb4409669ad9c5d"
+      "path": "requirements-lock.txt",
+      "bytes": 434,
+      "sha256": "0a541fcedd485b96af7baf5e34f566896daa2d2c4d3d2335e6a0bc5f02ed8945"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 25,
+      "sha256": "c5c47ecfbac90e9ce72b9e8a547f723374dc09af7dd51685093d122c8199671f"
+    },
+    {
+      "path": "work/age_support_sensitivity.py",
+      "bytes": 3966,
+      "sha256": "d6dab4770f2b55c112ef8bc2999182e1d959637e95948fc5ee082a15798381c4"
+    },
+    {
+      "path": "work/cross_country_calibration_and_matching.py",
+      "bytes": 6871,
+      "sha256": "d1721b68796746b346e00348806c3287a8b829d5c05579c55a82fdf0372baa6c"
+    },
+    {
+      "path": "work/cross_country_cohort_baseline.py",
+      "bytes": 4456,
+      "sha256": "5d6f35ced1c5cb9277934d2733b5a14e88ae471876182bb5c89b1702f7c5fec3"
+    },
+    {
+      "path": "work/cross_country_hearing_pilot.py",
+      "bytes": 11440,
+      "sha256": "1789414b6a3dbac5dbfa446c77eeb3c1a33062bc074c79d69edf259e79317404"
+    },
+    {
+      "path": "work/export_incremental_model_card.py",
+      "bytes": 3073,
+      "sha256": "9c22d60646ae8ea0e3127a134f9145bdbde40b8ba8b2e7b148280fcb3adbe43e"
+    },
+    {
+      "path": "work/hearing_outcome_threshold_sensitivity.py",
+      "bytes": 3867,
+      "sha256": "28e23e8c1aad7da351de3e33263d321a045b20acacebfe9dc4366ac40f99fff2"
+    },
+    {
+      "path": "work/incremental_complete_case_sensitivity.py",
+      "bytes": 3910,
+      "sha256": "8f0319baa42e93b58fead881d49d0aa9e5b54a9c42c1e714bca88633d10cb129"
+    },
+    {
+      "path": "work/incremental_exploratory_dca.py",
+      "bytes": 4789,
+      "sha256": "bf4ee8c9f077568a131438f26aa5aa6cf25edafdc36805915a2d07f2c305e10c"
+    },
+    {
+      "path": "work/incremental_same_cycle_recalibration.py",
+      "bytes": 6133,
+      "sha256": "257d47129d0da8d9112535d053a30eb28cb5375660f1afca0aed0e569a53d9a8"
+    },
+    {
+      "path": "work/incremental_self_report_models.py",
+      "bytes": 4795,
+      "sha256": "8d2f9e1938f2e297fa9f624efe47706bfaa58727915d5abc9f7299b7ccd0ce6f"
+    },
+    {
+      "path": "work/korea2019_independent_survey.R",
+      "bytes": 3801,
+      "sha256": "facc99d157428ef6ab772261ec6c94f4196658d995f5e93e7d8e5862767a76fc"
+    },
+    {
+      "path": "work/korea2019_independent_survey.py",
+      "bytes": 4529,
+      "sha256": "eeb5470b4ecbe3195e9b30ff04cb3f2f961ea87be6ccd1feb56d8054b19a6639"
+    },
+    {
+      "path": "work/korea2019_lonely_sensitivity.R",
+      "bytes": 1112,
+      "sha256": "d63835782b5df6a4e17805ba4fc079c43806b82d0e89ab11ab44c6d4f3153073"
+    },
+    {
+      "path": "work/korean_design_and_999_sensitivity.py",
+      "bytes": 7585,
+      "sha256": "a45319ccf8e160fcd03d440cd320f1ba88f4445f817d905de4394208e0a3e31f"
+    },
+    {
+      "path": "work/nhanes_corrected_pilot.py",
+      "bytes": 9769,
+      "sha256": "18fd01f8a9c6eb7f8bab3034c3cb27ff2b451a3524159a08325dbf31ee756870"
+    },
+    {
+      "path": "work/prepare_revised_incremental_outputs.py",
+      "bytes": 5175,
+      "sha256": "fe92bd1cbe65961fa9e52ce866f25b8b5af288f075f2e35d5bb4fd2d4f08c84a"
+    },
+    {
+      "path": "work/rebuild_primary_review_outputs.py",
+      "bytes": 6946,
+      "sha256": "cd9439f8ae2013673aff2fb18936e2111cb5096c17b7bc30e0ea894fa3019260"
+    },
+    {
+      "path": "work/render_primary_review_materials.py",
+      "bytes": 6647,
+      "sha256": "30ea1e19b112a06c3baddfeb262c2e74b03a2ce507c5ec1a5be7e1399947e03c"
+    },
+    {
+      "path": "work/reproduce_manuscript_outputs.py",
+      "bytes": 2562,
+      "sha256": "78527c78995745e44d2b5c208b996a6a9f7312b100c53bf6b5d5d39b3c62f142"
+    },
+    {
+      "path": "work/reproduce_operating_point_table.py",
+      "bytes": 3577,
+      "sha256": "17377dcd568517cb209ee55140342d89ca15338d1754401d8b2e04bf1ad5ad10"
+    },
+    {
+      "path": "work/review_intercept_recalibration.py",
+      "bytes": 2683,
+      "sha256": "ae97a79f51db139ee059a4cf054f22690c9f113eb535ef59b9ddb06e9ba8a7e7"
+    },
+    {
+      "path": "work/review_paired_rao_wu.py",
+      "bytes": 7751,
+      "sha256": "719c92c03dc5bbc806eec0017e25bf9e67f74bb1031ab5053f7a9216d5a8e9a6"
+    },
+    {
+      "path": "work/survey_paired_auc.py",
+      "bytes": 3252,
+      "sha256": "72f61bc9e6b4da975b7d7b1f55cf2ebf79059abb28b45e8dcc38a3eada4a15dd"
+    },
+    {
+      "path": "work/test_incremental_apparent_recalibration.py",
+      "bytes": 1588,
+      "sha256": "4a8e34d07634b6d21fa147b0114986a64062ff35deddec9cfa25059dcfeba03f"
+    },
+    {
+      "path": "work/test_korea2019_independent_survey.py",
+      "bytes": 1893,
+      "sha256": "81a566f0e833f1d7ebc6cd4a42988c7d75a66e0f2f9b17119ea6df2d7509842e"
+    },
+    {
+      "path": "work/test_korean_sensitivity_outputs.py",
+      "bytes": 2223,
+      "sha256": "eb4071ba90cf306163794515e12736800d585ffb7eeddd74183f507190106af5"
+    },
+    {
+      "path": "work/test_survey_paired_auc.py",
+      "bytes": 1040,
+      "sha256": "584bb0fd87e127b440c6cf751dc3626bd567d7341f26a057a132f618f723d066"
+    },
+    {
+      "path": "work/validate_nhanes_2003_2004.py",
+      "bytes": 6913,
+      "sha256": "9c3423aed5d8b61efebf699e5ed84d4df4b47c7217eff2532899c601f39f0167"
+    },
+    {
+      "path": "work/verify_reproduction_outputs.py",
+      "bytes": 3168,
+      "sha256": "41197253ff85b32a5d8660254e340fc00b46ebc8258be26306b2231554c2493c"
+    },
+    {
+      "path": "work/verify_survey_auc.R",
+      "bytes": 792,
+      "sha256": "0f03846a0c799730d5cd872df4260bceea41edc9f8473b2e968062a6a8f8e171"
     }
   ],
   "includes_individual_data": false

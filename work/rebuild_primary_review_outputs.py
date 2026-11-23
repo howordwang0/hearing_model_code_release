@@ -4,13 +4,15 @@ Temporary person-level intermediates remain under work/data and are deleted on
 exit. Aggregate outputs do not establish independent design or clinical review.
 """
 from pathlib import Path
+import os
+import shutil
 import subprocess
 import sys
 import tempfile
 import warnings
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path[:0] = [str(ROOT / 'work/pydeps'), str(ROOT / 'work')]
+sys.path.insert(0, str(ROOT / 'work'))
 warnings.filterwarnings('ignore', category=FutureWarning)
 warnings.filterwarnings('ignore', category=UserWarning)
 import numpy as np
@@ -22,7 +24,9 @@ import validate_nhanes_2003_2004 as older
 from cross_country_cohort_baseline import weighted_mean
 from survey_paired_auc import auc_and_influence, paired_delta
 
-R = Path(r'C:\Program Files\R\R-4.5.2\bin\Rscript.exe')
+R = os.environ.get('RSCRIPT') or shutil.which('Rscript')
+if not R:
+    raise RuntimeError('Set RSCRIPT or add Rscript to PATH to run the survey variance check.')
 OUT = ROOT / 'outputs'
 
 
@@ -90,7 +94,7 @@ def main():
             py = paired_delta(y, p0, p1, w, z[strata], z[psu], list(map(tuple, keys.to_numpy())))
             datafile, outfile = tmp / 'design.csv', tmp / 'r_result.csv'
             design.rename(columns={strata: 'stratum', psu: 'psu'}).to_csv(datafile, index=False)
-            run = subprocess.run([str(R), str(ROOT/'work/verify_survey_auc.R'), str(datafile), str(outfile)],
+            run = subprocess.run([R, str(ROOT/'work/verify_survey_auc.R'), str(datafile), str(outfile)],
                                  capture_output=True, text=True, encoding='utf-8', errors='replace')
             if run.returncode:
                 raise RuntimeError(f'{name}: R survey failed: {run.stderr}')

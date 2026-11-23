@@ -4,13 +4,15 @@ All generated person-level intermediates are temporary. Scenarios are not
 assertions of code meaning or recommendations for an official survey design.
 """
 from pathlib import Path
+import os
+import shutil
 import subprocess
 import sys
 import tempfile
 import warnings
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path[:0] = [str(ROOT/'work/pydeps'), str(ROOT/'work')]
+sys.path.insert(0, str(ROOT/'work'))
 warnings.filterwarnings('ignore', category=FutureWarning)
 warnings.filterwarnings('ignore', category=UserWarning)
 import numpy as np
@@ -24,7 +26,9 @@ import validate_nhanes_2003_2004 as old
 from survey_paired_auc import auc_and_influence
 from cross_country_calibration_and_matching import weighted_calibration
 
-R = r'C:\Program Files\R\R-4.5.2\bin\Rscript.exe'
+R = os.environ.get('RSCRIPT') or shutil.which('Rscript')
+if not R:
+    raise RuntimeError('Set RSCRIPT or add Rscript to PATH to run the survey variance check.')
 OUT = ROOT/'outputs'
 
 

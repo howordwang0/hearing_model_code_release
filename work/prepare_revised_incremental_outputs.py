@@ -2,7 +2,6 @@
 from pathlib import Path
 import sys
 ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT/'work/pydeps'))
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt

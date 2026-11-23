@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this code, please cite the accompanying manuscript."
 title: "Incremental hearing-loss model analysis code"
-version: "0.1.1"
-date-released: 2026-11-12
+version: "0.1.2"
+date-released: 2026-11-23
 authors:
   - family-names: Wang
     given-names: Daijie

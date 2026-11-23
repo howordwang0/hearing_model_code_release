@@ -3,13 +3,15 @@
 Only aggregate results are retained; the temporary survey-level file is deleted.
 """
 from pathlib import Path
+import os
+import shutil
 import json
 import subprocess
 import sys
 import tempfile
 import warnings
 ROOT=Path(__file__).resolve().parents[1]
-sys.path[:0]=[str(ROOT/'work/pydeps'),str(ROOT/'work')]
+sys.path.insert(0,str(ROOT/'work'))
 warnings.filterwarnings('ignore', category=FutureWarning)
 warnings.filterwarnings('ignore', category=UserWarning)
 import numpy as np
@@ -58,7 +60,10 @@ def main():
     with tempfile.TemporaryDirectory(prefix='survey_independent_',dir=ROOT/'work/data') as tmp:
         src,dst=Path(tmp)/'design.csv',Path(tmp)/'results.csv'
         design.to_csv(src,index=False)
-        run=subprocess.run([r'C:\Program Files\R\R-4.5.2\bin\Rscript.exe',
+        rscript=os.environ.get('RSCRIPT') or shutil.which('Rscript')
+        if not rscript:
+            raise RuntimeError('Set RSCRIPT or add Rscript to PATH to run the survey variance check.')
+        run=subprocess.run([rscript,
                             str(ROOT/'work/korea2019_independent_survey.R'),str(src),str(dst)],
                            capture_output=True,text=True,encoding='utf-8',errors='replace')
         if run.returncode: raise RuntimeError(run.stderr)

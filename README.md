@@ -1,20 +1,22 @@
-# Analysis Code: Author-Review Bundle
+# Hearing-loss model analysis code
 
-This source-only release accompanies the exploratory manuscript. It contains selected scripts and aggregate model/results files; it does not include downloaded individual-level survey records, applicant account details, or installed third-party packages. Public repository: https://github.com/howordwang0/hearing_model_code_release. Persistent concept DOI: https://doi.org/10.5281/zenodo.24149658. Verify survey data-use terms before obtaining source files.
+This repository contains the analysis code and aggregate outputs accompanying the exploratory manuscript “Incremental Value of Routine Examination Variables Beyond Self-reported Hearing for Audiometric Hearing Loss.” No individual-level KNHANES or NHANES records are included. Obtain source files from the official Korea Disease Control and Prevention Agency (KDCA) and US Centers for Disease Control and Prevention (CDC) portals under their terms of use. Do not commit or redistribute survey microdata.
 
-## Scope
+The analysis is exploratory and was performed after prior inspection of the survey samples. Re-running these scripts is computational reproduction, not a new blinded validation. The KNHANES 2019 component design and singleton-PSU variance treatment remain unresolved and are presented as sensitivity analyses only.
 
-The scripts include KNHANES/NHANES harmonization, unweighted incremental-model fitting, fixed-model paired resampling, the exploratory 2019 R survey sensitivity analysis, post-hoc calibration updating, and related figures and checks. They reflect exploratory analyses after prior data inspection. The Korea 2019 component design and its singleton-PSU adjustment remain unconfirmed; the output must not be presented as a validated clinical tool.
+## Reproduce the analysis
 
-## Runtime used here
+Tested environment: Windows x64, Python 3.12.14, NumPy 2.5.4, pandas 3.1.1, SciPy 1.18.1, scikit-learn 1.9.1, pyreadstat 1.3.7, statsmodels 0.15.0, and matplotlib 3.11.2. Install the pinned environment from the repository root:
 
-Python 3.12.14; numpy 2.5.4; pandas 3.1.1; scipy 1.18.1; scikit-learn 1.9.1; pyreadstat 1.3.7; statsmodels 0.15.0; matplotlib 3.11.2. R 4.5.2 with `survey` 4.4-8 was used for the 2019 variance checks. Version numbers record the local environment, not independently verified portable installation constraints.
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements-lock.txt
+```
 
-Some scripts call `C:\Program Files\R\R-4.5.2\bin\Rscript.exe` explicitly and expect paths relative to the project root. They require modification or that exact local installation; do not claim cross-platform reproducibility yet.
+The 2019 KNHANES and 2010 code-sensitivity checks use R 4.5.2 and the R package `survey` 4.4-8. Add `Rscript` to `PATH`, or set `RSCRIPT` to the full executable path (for example, `$env:RSCRIPT = 'C:\Program Files\R\R-4.5.2\bin\Rscript.exe'`).
 
-## Required data layout
-
-Acquire data from the official [KNHANES portal](https://knhanes.kdca.go.kr/) and [NHANES portal](https://wwwn.cdc.gov/nchs/nhanes/) under their respective terms. Restore the following layout at the project root, without committing source data:
+Download and arrange the source data as follows. `.xpt` files should use the lower-case names shown below; original data formats must be preserved for KNHANES.
 
 ```text
 work/data/knhanes/extracted/hn10_all.sas7bdat
@@ -27,20 +29,31 @@ work/data/knhanes/extracted/hn22_all.sas7bdat
 work/data/knhanes/2010_ent.sas7bdat
 work/data/knhanes/2011_ent.sas7bdat
 work/data/knhanes/2012_ent.sas7bdat
-work/data/nhanes/2001_2002/*.xpt
-work/data/nhanes/2003_2004/*.xpt
-work/data/nhanes/2011_2012/*.xpt
-work/data/nhanes/2015_2016/*.xpt
+work/data/nhanes/2001_2002/{demo_b,aux_b,bmx_b,l40_b,l25_b,diq_b,smq_b,auq_b}.xpt
+work/data/nhanes/2003_2004/{demo_c,aux_c,bmx_c,l40_c,l25_c,diq_c,smq_c,auq_c}.xpt
+work/data/nhanes/2011_2012/{demo_g,aux_g,bmx_g,biopro_g,cbc_g,diq_g,smq_g,auq_g}.xpt
+work/data/nhanes/2015_2016/{demo_i,aux_i,bmx_i,biopro_i,cbc_i,diq_i,smq_i,auq_i}.xpt
+work/data/nhanes/2017_2020/{p_demo,p_aux,p_bmx,p_biopro,p_cbc,p_diq,p_smq,p_auq}.xpt
 ```
 
-The precise file names and fields are specified in `work/validate_nhanes_2003_2004.py` and `work/nhanes_corrected_pilot.py`. Some older scripts include optional 2017–2020 analyses outside the current manuscript. Intermediate person-level CSV files in temporary `work/data` directories are created by the R checks and are removed by the scripts on normal exit; protect the working directory and check for remnants after an interrupted run.
+The 2017–2020 NHANES files support an earlier exploratory 70+ pilot included in `cross_country_hearing_pilot.py`; that result is outside the final manuscript’s primary evaluation samples but is run by the full pipeline.
 
-## Entry points
+From the repository root, run the complete sequence and aggregate-output checks:
 
-- `work/incremental_self_report_models.py`: refit Korean development models and evaluate inspected later cohorts.
-- `work/review_paired_rao_wu.py`: fixed-model paired bootstrap where no component stratum has a singleton PSU; Korea 2019 is deliberately not assigned a bootstrap interval.
-- `work/korea2019_independent_survey.py`: exploratory R linearization under alternative singleton assumptions.
-- `work/incremental_same_cycle_recalibration.py`: apparent US 2015–2016 intercept updating and post-hoc transfer to other cycles.
-- `work/prepare_revised_incremental_outputs.py`: generate the seven-cohort paired-bootstrap figure and the separately labeled 2019 supplementary table from included aggregate outputs.
+```powershell
+python work/reproduce_manuscript_outputs.py
+```
 
-Commands must be run from the project root after the data and packages have been installed, for example `python work/incremental_same_cycle_recalibration.py`. Some entry points depend on aggregate outputs generated by other scripts or included in this bundle. In a temporary directory, the seven-cohort results table was reproduced from the included aggregate inputs using the existing local Python packages. The full end-to-end sequence and an isolated-environment rerun remain to be documented and verified. The source survey files are not redistributed and remain subject to KDCA and US CDC data-use terms.
+The runner checks that inputs are present, runs the model, paired resampling, cohort summaries, calibration, decision-curve and sensitivity scripts in dependency order, creates the Table 4 operating-point summary, and finishes with `work/verify_reproduction_outputs.py`. Intermediate R survey files are written to temporary directories under `work/data` and removed on normal completion. If a run is interrupted, inspect and remove only temporary files created by that interrupted run before restarting.
+
+Key entry points are `work/incremental_self_report_models.py` (primary incremental models), `work/review_paired_rao_wu.py` (500 paired PSU resamples), `work/reproduce_operating_point_table.py` (US operating-point table), and `work/korean_design_and_999_sensitivity.py` (Korea 2019 singleton and 2010 code sensitivity). The model development and fixed-model evaluation remain exploratory; point estimates use survey weights while model fitting is unweighted.
+
+All generated files in `outputs/` are aggregate summaries, model metadata or figures. Check the versioned `manifest.json` for file sizes and SHA-256 hashes. The release does not redistribute source survey files.
+
+## Software version and archive
+
+This GitHub source update is version 0.1.2 (`v0.1.2`). The persistent Zenodo concept DOI is [10.5281/zenodo.24149658](https://doi.org/10.5281/zenodo.24149658); it may resolve to an earlier archived snapshot until the updated source package is deposited there. Check the DOI record’s version before treating the Zenodo archive as identical to the current GitHub tag.
+
+## License
+
+Code and aggregate outputs are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). Survey data remain subject to the source agencies’ terms. See `LICENSE`.

@@ -7,7 +7,7 @@ import json
 import sys
 import warnings
 ROOT=Path(__file__).resolve().parents[1]
-sys.path[:0]=[str(ROOT/'work/pydeps'),str(ROOT/'work')]
+sys.path.insert(0,str(ROOT/'work'))
 warnings.filterwarnings('ignore',category=FutureWarning)
 warnings.filterwarnings('ignore',category=UserWarning)
 import matplotlib
@@ -35,7 +35,7 @@ def sample_recent(cycle):
     return d[d.age.between(40,69)&d.outcome.notna()&d.self_hearing_difficulty.notna()&d.weight.gt(0)].copy()
 
 def main():
-    card=json.loads((OUT/'增量模型_系数与插补规则_研究用.json').read_text(encoding='utf-8'))
+    card=json.loads((OUT/'model_card_reproduction.json').read_text(encoding='utf-8'))
     samples={'US_2001_2002':sample_old(2001),'US_2003_2004':sample_old(2003),
              'US_2011_2012':sample_recent('2011_2012'),'US_2015_2016':sample_recent('2015_2016')}
     update=samples['US_2015_2016'];rows=[]; curves=[]

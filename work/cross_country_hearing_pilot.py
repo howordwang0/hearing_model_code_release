@@ -5,7 +5,6 @@ import sys
 import warnings
 
 ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT/'work/pydeps'))
 sys.path.insert(0,str(ROOT/'work'))
 warnings.filterwarnings('ignore',category=FutureWarning)
 warnings.filterwarnings('ignore',category=UserWarning)

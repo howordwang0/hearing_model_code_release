@@ -1,17 +1,15 @@
 # Incremental hearing-loss model analysis code
 
-This source-only release accompanies the exploratory manuscript “Incremental Value of Routine Examination Variables Beyond Self-reported Hearing for Audiometric Hearing Loss.” It contains analysis scripts, aggregate outputs, and model metadata. It contains no individual-level KNHANES or NHANES records.
+This source-only release accompanies the exploratory manuscript “Incremental Value of Routine Examination Variables Beyond Self-reported Hearing for Audiometric Hearing Loss.” It contains analysis scripts, aggregate outputs, and model metadata; it does not contain individual-level KNHANES or NHANES records.
 
-The source surveys must be obtained from the official Korea Disease Control and Prevention Agency and US Centers for Disease Control and Prevention portals under their data-use terms. Do not commit downloaded survey files. The current analysis is exploratory; Korean 2019 singleton-PSU handling remains design-sensitive, and the code does not establish clinical deployment.
+Obtain survey files from the official Korea Disease Control and Prevention Agency and US Centers for Disease Control and Prevention portals under their data-use terms. Never commit or redistribute survey microdata. See `README.md` for the exact input layout, pinned Python environment, R requirements, and one-command reproduction workflow.
 
-## Reproducibility
+The full workflow includes the operating-point Table 4 generator and an aggregate-result verifier. It was rerun from a clean Python 3.12.14 environment in November 2026. Korean 2019 singleton-PSU intervals remain design-sensitive, and the analysis is exploratory rather than a clinical decision tool or a new blinded validation.
 
-The included scripts were run in the local environment documented in `README.md` at the archive root. Some entry points require R and local paths that must be adapted. The included aggregate-output check reproduces the seven-cohort results table without individual-level records.
+## Current source and archive
 
-## Status
-
-Public repository: https://github.com/howordwang0/hearing_model_code_release (version tag v0.1.0). Persistent concept DOI: https://doi.org/10.5281/zenodo.24149658. The archived release record supplied by the authors is Zenodo record 24149967 (v0.1.1).
+GitHub source tag: `v0.1.2`. Persistent Zenodo concept DOI: https://doi.org/10.5281/zenodo.24149658. The Zenodo concept record may still resolve to archived version 0.1.1 until this updated source snapshot is deposited; verify the version shown on the DOI landing page.
 
 ## License
 
-Code and aggregate outputs in this release are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). See `LICENSE`. The underlying KNHANES and NHANES source data are not covered by this license and remain subject to their own data-use terms.
+Code and aggregate outputs are licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). The underlying KNHANES and NHANES source data are not covered by this license and remain subject to agency terms. See `LICENSE`.
